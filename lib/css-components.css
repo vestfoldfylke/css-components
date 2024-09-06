@@ -219,19 +219,29 @@ input {
 	border-radius: 0.4rem;
 }
 
-input:hover, .icon-input:hover, .button-input:hover {
-	background-color: var(--primary-color-10);
-}
-
-.icon-input:hover input, .button-input:hover input {
-	background-color: var(--primary-color-10);
-}
-
-.icon-input, .button-input {
+.icon-input, .button-input, .label-input {
 	display: flex;
 	align-items: center;
 	border: 2px solid var(--primary-color);
 	border-radius: 0.4rem;
+}
+
+input:hover, .icon-input:hover, .button-input:hover, .label-input:hover {
+	background-color: var(--primary-color-10);
+}
+
+.icon-input:hover input, .button-input:hover input, .label-input:hover input {
+	background-color: var(--primary-color-10);
+}
+
+input:focus-visible, .icon-input:focus-within, .button-input:focus-within, .label-input:focus-within {
+	outline: 4px solid var(--primary-color);
+	outline-offset: -4px;
+}
+
+.icon-input input:focus-visible, .button-input input:focus-visible, .label-input input:focus-visible {
+	border: 0px solid var(--primary-color);
+	outline: 0px;
 }
 
 .button-input button {
@@ -239,42 +249,33 @@ input:hover, .icon-input:hover, .button-input:hover {
 	border-top: 0px;
 	border-right: 0px;
 	border-bottom: 0px;
-	border-left: 2px solid var(--primary-color);
+	border: 0px solid var(--primary-color);
 	border-radius: 0rem;
 }
 
-.button-input input {
+.button-input input, .label-input input {
 	border: 0px solid var(--primary-color);
 	flex-grow: 1;
 }
 
+/* Icon gets extra padding */
 .icon-input input {
 	padding: 0px 16px 0px 0px;
 	border: 0px solid var(--primary-color);
 	flex-grow: 1;
 }
 
-.icon-input:focus-within, .button-input:focus-within {
-	outline: 4px solid var(--primary-color);
-	outline-offset: 1px;
-}
-
-.icon-input input:focus-visible, .button-input input:focus-visible {
-	border: 0px solid var(--primary-color);
-	outline: 0px;
-}
-
-.icon-input span, .button-input span {
+.icon-input span {
 	padding: 0rem 0.5rem;
 	font-size: 1.5rem;
 }
 
-.icon-input.round, .button-input.round {
+.icon-input.round, .button-input.round, .label-input.round {
 	border-radius: 3rem;
 	padding: 0rem var(--spacing);
 }
 
-.button-input.round, .icon-input.button-input.round {
+.button-input.round, .icon-input.button-input.round, .label-input.button-input.round {
 	padding: 0rem 0rem 0rem var(--spacing);
 }
 
@@ -282,7 +283,7 @@ input:hover, .icon-input:hover, .button-input:hover {
 	border-radius: 0rem 3rem 3rem 0rem;
 }
 
-.icon-input.round input, .button-input.round input {
+.icon-input.round input, .button-input.round input, .label-input.round input {
 	border-radius: 3rem;
 }
 
@@ -295,26 +296,11 @@ input:hover, .icon-input:hover, .button-input:hover {
 	font-size: var(--font-size-small);
 	position: absolute;
 	padding: 0rem 0rem;
-	top: -1.0625rem;
-	top: -1.375rem;
+	top: -1.5rem;
 }
 
 .label-input:focus-within label {
 	font-weight: bold;
-	top: -1.375rem;
-}
-
-.label-input.icon-input label {
-	font-size: var(--font-size-small);
-	position: absolute;
-	padding: 0rem 0rem;
-	top: -1.1875rem;
-	top: -1.5rem;
-}
-
-.label-input.icon-input:focus-within label {
-	font-weight: bold;
-	top: -1.5rem;
 }
 
 input[type="radio"], input[type="checkbox"] {
@@ -322,6 +308,11 @@ input[type="radio"], input[type="checkbox"] {
 	transform: scale(1.5);
 	accent-color: var(--primary-color-80);
 	margin: var(--spacing-small);
+}
+
+input[type="radio"]:focus-visible, input[type="checkbox"]:focus-visible {
+	outline: 4px solid var(--primary-color);
+	outline-offset: 1px;
 }
 
 textarea {
