@@ -1,0 +1,32 @@
+{
+  "name": "@vestfoldfylke/css-components",
+  "version": "1.0.0",
+  "description": "Pure css components with fylkes-styling",
+  "main": "cjs/index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./esm/index.js",
+      "require": "./cjs/index.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./scripts/update-dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vestfoldfylke/css-components.git"
+  },
+  "keywords": [
+    "css",
+    "components",
+    "styling"
+  ],
+  "author": "jorgtho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vestfoldfylke/css-components/issues"
+  },
+  "homepage": "https://github.com/vestfoldfylke/css-components#readme"
+}

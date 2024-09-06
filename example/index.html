@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="no">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <style>
+			@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+		</style>
+    <link rel="stylesheet" href="./style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .content {
+        padding: 32px;
+      }
+      .element {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+        padding: 4px 0px;
+      }
+    </style>
+	</head>
+	<body>
+    <div class="content">
+      <h1>CSS-komponents (fylkesversjon)</h1>
+      <h2>Link</h2>
+      <div class="element">
+        <a href="index.html">This is a hyperlink</a>
+        <xmp><a href="index.html">This is a hyperlink</a></xmp>
+      </div>
+      <div class="element">
+        <a href="index.html" class="button">This is a link that looks like a button</a>
+        <xmp><a href="index.html" class="button">This is a link that looks like a button</a></xmp>
+      </div>
+      <div class="element">
+        <a href="index.html" class="button filled">This is a link that also looks like a button</a>
+        <xmp><a href="index.html" class="button filled">>This is a link that also looks like a button</a></xmp>
+      </div>
+      <div class="remark">
+        Note that all button classes can also be used on a link (a) with class "button"</a></xmp>
+      </div>
+
+      <h2>Headers</h2>
+      <div class="element">
+        <div>
+          <h1>Header h1</h1>
+          <p>Blablabl</p>
+        </div>
+        <xmp><h1>Header h1</h1></xmp>
+        <xmp><p>Blablabl</p></xmp>
+      </div>
+      <div class="element">
+        <div>
+          <h2>Header h2</h2>
+          <p>Blablabl</p>
+        </div>
+        <xmp>
+          <h2>Header h2</h2>
+          <p>Blablabl</p>
+        </xmp>
+      </div>
+      <div class="element">
+        <div>
+          <h3>Header h3</h3>
+          <p>Blablabl</p>
+        </div>
+        <xmp>
+          <h3>Header h4</h3>
+          <p>Blablabl</p>
+        </xmp>
+      </div>
+      <div class="element">
+        <div>
+          <h4>Header h4</h4>
+          <p>Blablabl</p>
+        </div>
+        <xmp>
+          <h4>Header h4</h4>
+          <p>Blablabl</p>
+        </xmp>
+      </div>
+
+      <h2>Buttons</h2>
+      <div class="element">
+        <button>A regular button</button>
+        <xmp><button>A regular button</button></xmp>
+      </div>
+      <div class="element">
+        <button class="filled">A filled button</button>
+        <xmp><button class="filled">A filled button</button></xmp>
+      </div>
+      <div class="element">
+        <button disabled class="filled">A disabled button</button>
+        <xmp><button disabled class="filled">A disabled button</button></xmp>
+      </div>
+      <div class="element">
+        <button class="squared">A squared button</button>
+        <xmp><button class="squared">A squared button</button></xmp>
+      </div>
+      <div class="element">
+        <button class="filled squared">A filled squared button</button>
+        <xmp><button class="filled squared">A filled squared button</button></xmp>
+      </div>
+      <div class="element">
+        <button><span class="material-symbols-outlined">home</span>A button with icon</button>
+        <xmp><button><span class="material-symbols-outlined">home</span>A button with icon</button></xmp>
+      </div>
+      <div class="element">
+        <button class="filled"><span class="material-symbols-outlined">home</span>A button with icon</button>
+        <xmp><button class="filled"><span class="material-symbols-outlined">home</span>A button with icon</button></xmp>
+      </div>
+      <div class="element">
+        <button class="icon"><span class="material-symbols-outlined">home</span></button>
+        <xmp><button class="icon"><span class="material-symbols-outlined">home</span></button></xmp>
+      </div>
+      <div class="element">
+        <button class="icon filled"><span class="material-symbols-outlined">home</span></button>
+        <xmp><button class="icon filled"><span class="material-symbols-outlined">home</span></button></xmp>
+      </div>
+      <div class="element">
+        <button class="action"><span class="material-symbols-outlined">more_vert</span></button>
+        <xmp><button class="action"><span class="material-symbols-outlined">more_vert</span></button></xmp>
+      </div>
+      <div class="element">
+        <div style="padding: 8px; background-color: var(--primary-color-20);">
+          <button class="action"><span class="material-symbols-outlined">more_vert</span></button>
+        </div>
+        <xmp>
+          <div style="padding: 8px; background-color: var(--primary-color-20);">
+            <button class="action"><span class="material-symbols-outlined">more_vert</span></button>
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <button class="blank">A blank button without styling</button>
+        <xmp><button class="blank">A button just is there but isnt</button></xmp>
+      </div>
+      <div class="element">
+        <button class="link">A button that looks like a link</button>
+        <xmp><button class="link">A button that looks like a link</button></xmp>
+      </div>
+      
+      <h2>Input elements</h2>
+      <div class="element">
+        <input type="text" placeholder="Regular text" />
+        <xmp><input type="text" placeholder="Regular text"></xmp>
+      </div>
+      <br />
+      <div class="element">
+        <div class="label-input">
+          <label for="textElement">A label for the input</label>
+          <input id="textElement" type="text" placeholder="Regular text" />
+        </div>
+        <xmp>
+          <div class="label-input">
+            <label for="textElement">A label for the input</label>
+            <input id="textElement" type="text" placeholder="Regular text" />
+          </div>
+        </xmp>
+      </div>
+      <br />
+      <div class="element">
+        <div style="background-color: var(--secondary-color-20); min-height: 80px; padding: 20px;">
+          <div class="label-input">
+            <label for="on-color">A label for the input</label>
+            <input id="on-color" type="text" placeholder="Regular text" />
+          </div>
+        </div>
+        <xmp>
+          <div style="background-color: var(--secondary-color-20); min-height: 80px; padding: 20px;">
+            <div class="label-input">
+              <label for="on-color">A label for the input</label>
+              <input id="on-color" type="text" placeholder="Regular text" />
+            </div>
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <div class="icon-input">
+          <span class="material-symbols-outlined">star</span>
+          <input type="text" placeholder="With icon" />
+        </div>
+        <xmp>
+          <div class="icon-input">
+            <span class="material-symbols-outlined">star</span>
+            <input type="text" placeholder="With icon" />
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <div class="icon-input label-input">
+          <span class="material-symbols-outlined">apps</span>
+          <label for="fancy">A label for the input</label>
+          <input id="fancy" type="text" placeholder="With icon" />
+        </div>
+        <xmp>
+          <div class="icon-input label-input">
+            <span class="material-symbols-outlined">apps</span>
+            <label for="fancy">A label for the input</label>
+            <input id="fancy" type="text" placeholder="With icon" />
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <div class="icon-input label-input">
+          <span class="material-symbols-outlined">favorite</span>
+          <label for="fancy2">A label for the input</label>
+          <input id="fancy2" type="text" placeholder="With icon" />
+        </div>
+        <xmp>
+          <div class="icon-input label-input">
+            <span class="material-symbols-outlined">favorite</span>
+            <label for="fancy2">A label for the input</label>
+            <input id="fancy2" type="text" placeholder="With icon" />
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <div class="button-input">
+          <input type="text" placeholder="With button" />
+          <button>Hallo</button>
+        </div>
+        <xmp>
+          <div class="button-input">
+            <input type="text" placeholder="With button" />
+            <button>Hallo</button>
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <div class="button-input icon-input">
+          <span class="material-symbols-outlined">key</span>
+          <input type="text" placeholder="With button and icon" />
+          <button>Hallo</button>
+        </div>
+        <xmp>
+          <div class="button-input icon-input">
+            <span class="material-symbols-outlined">key</span>
+            <input type="text" placeholder="With button and icon" />
+            <button>Hallo</button>
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <div class="button-input label-input">
+          <label for="bl">Labelino</label>
+          <input id="bl" type="text" placeholder="With button and label" />
+          <button>Hallo</button>
+        </div>
+        <xmp>
+          <div class="button-input label-input">
+            <label for="bl">Labelino</label>
+            <input id="bl" type="text" placeholder="With button and label" />
+            <button>Hallo</button>
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <div class="button-input icon-input label-input">
+          <label for="bil">Labelino</label>
+          <span class="material-symbols-outlined">key</span>
+          <input style="width: 20rem;" id="bil" type="text" placeholder="With button and icon and label" />
+          <button><span class="material-symbols-outlined">search</span></button>
+        </div>
+        <xmp>
+          <div class="button-input icon-input label-input">
+            <label for="bil">Labelino</label>
+            <span class="material-symbols-outlined">key</span>
+            <input style="width: 20rem;" id="bil" type="text" placeholder="With button and icon and label" />
+            <button><span class="material-symbols-outlined">search</span></button>
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <div class="icon-input label-input round">
+          <label for="fancy3">A label for the input</label>
+          <span class="material-symbols-outlined">search</span>
+          <input id="fancy3" type="text" placeholder="With icon" />
+        </div>
+        <xmp>
+          <div class="icon-input label-input round">
+            <label for="fancy3">A label for the input</label>
+            <input id="fancy3" type="text" placeholder="With icon" />
+            <span class="material-symbols-outlined">search</span>
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <div class="button-input round">
+          <input type="text" placeholder="Round with button" />
+          <button><span class="material-symbols-outlined">zoom_in</span></button>
+        </div>
+        <xmp>
+          <div class="icon-input label-input button-input round">
+            <label for="fancy3button">A label for the input</label>
+            <span class="material-symbols-outlined">search</span>
+            <input id="fancy3button" type="text" placeholder="With icon" />
+            <button><span class="material-symbols-outlined">search</span></button>
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <div class="icon-input label-input button-input round">
+          <label for="fancy3button">A label for the input</label>
+          <span class="material-symbols-outlined">search</span>
+          <input id="fancy3button" type="text" placeholder="With icon" />
+          <button><span class="material-symbols-outlined">search</span></button>
+        </div>
+        <xmp>
+          <div class="icon-input label-input button-input round">
+            <label for="fancy3button">A label for the input</label>
+            <span class="material-symbols-outlined">search</span>
+            <input id="fancy3button" type="text" placeholder="With icon" />
+            <button><span class="material-symbols-outlined">search</span></button>
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <div>
+          <input type="radio" id="html" name="fav_language" value="HTML" />
+          <label for="html">HTML</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS" />
+          <label for="css">CSS</label><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+          <label for="javascript">JavaScript</label>
+        </div>
+        <xmp>
+          <input type="radio" id="html" name="fav_language" value="HTML" />
+          <label for="html">HTML</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS" />
+          <label for="css">CSS</label><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+          <label for="javascript">JavaScript</label>
+        </xmp>
+      </div>
+      <div class="element">
+        <div>
+          <input type="checkbox" id="butter" name="groceries" value="butter" />
+          <label for="butter">Butter</label><br>
+          <input type="checkbox" id="banana" name="groceries" value="banana" />
+          <label for="banana">Banana</label><br>
+          <input type="checkbox" id="mango" name="groceries" value="mango" />
+          <label for="mango">mango</label><br>
+        </div>
+        <xmp>
+          <input type="checkbox" id="butter" name="groceries" value="butter" />
+          <label for="butter">Butter</label><br>
+          <input type="checkbox" id="banana" name="groceries" value="banana" />
+          <label for="banana">Banana</label><br>
+          <input type="checkbox" id="mango" name="groceries" value="mango" />
+          <label for="mango">mango</label><br>
+        </xmp>
+      </div>
+      <div class="element">
+        <input type="date" />
+        <xmp><input type="date" /></xmp>
+      </div>
+
+      <div class="element">
+        <textarea id="story" name="story" rows="5" cols="33">It was a dark and stormy night...</textarea>
+        <xmp>
+          <textarea id="story" name="story" rows="5" cols="33">
+            It was a dark and stormy night...
+          </textarea>
+        </xmp>
+      </div>
+
+
+      <div class="element">
+        <select>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Another option</option>
+        </select>
+        <xmp>
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Another option</option>
+          </select>
+        </xmp>
+      </div>
+
+      <div class="element">
+        <div class="label-select">
+          <label for="a-select">A label for the select</label>
+          <select id="a-select">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Another option</option>
+          </select>
+        </div>
+        <xmp>
+          <div class="label-select">
+            <label for="a-select">A label for the select</label>
+            <select id="a-select">
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Another option</option>
+            </select>
+          </div>
+        </xmp>
+      </div>
+      
+      <h2>Loading spinner</h2>
+      <div class="element">
+        <div class="spinner" style="width: 10rem">
+          <svg viewBox="0 0 50 50" focusable="false" aria-label="Laster...">
+              <title>Laster...</title>
+              <circle cx="25" cy="25" r="20"></circle>
+              <circle cx="25" cy="25" r="20"></circle>
+          </svg>
+        </div>
+        <xmp>
+          <div class="spinner" style="width: 10rem">
+            <svg viewBox="0 0 50 50" focusable="false" aria-label="Laster...">
+                <title>Laster...</title>
+                <circle cx="25" cy="25" r="20"></circle>
+                <circle cx="25" cy="25" r="20"></circle>
+            </svg>
+          </div>
+        </xmp>
+      </div>
+
+
+    </div>
+	</body>
+</html>
+ 
