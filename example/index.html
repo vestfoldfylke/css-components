@@ -149,7 +149,10 @@
         <input type="text" placeholder="Regular text" />
         <xmp><input type="text" placeholder="Regular text"></xmp>
       </div>
-      <br />
+      <div class="element">
+        <input disabled type="text" placeholder="Disabled input" value="Cannot do anything here" />
+        <xmp><input disabled type="text" placeholder="Disabled input"></xmp>
+      </div>
       <div class="element">
         <div class="label-input">
           <label for="textElement">A label for the input</label>
@@ -162,7 +165,6 @@
           </div>
         </xmp>
       </div>
-      <br />
       <div class="element">
         <div style="background-color: var(--secondary-color-20); min-height: 80px; padding: 20px;">
           <div class="label-input">
@@ -188,6 +190,18 @@
           <div class="icon-input">
             <span class="material-symbols-outlined">star</span>
             <input type="text" placeholder="With icon" />
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <div class="icon-input">
+          <span class="material-symbols-outlined">sentiment_frustrated</span>
+          <input disabled type="text" placeholder="Huhu" value="Disabled icon input" />
+        </div>
+        <xmp>
+          <div class="icon-input">
+            <span class="material-symbols-outlined">sentiment_frustrated</span>
+            <input disabled type="text" placeholder="Huhu" value="Disabled icon input" />
           </div>
         </xmp>
       </div>
