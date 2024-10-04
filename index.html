@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="no">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <style>
+			@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+		</style>
+    <link rel="stylesheet" href="./style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style id="harryStyles">
+      .content {
+        padding: 32px;
+      }
+      .element {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+        padding: 4px 0px;
+      }
+    </style>
+	</head>
+	<body>
+    <p>Halla</p>
+	</body>
+  <script src="./lib/generate-css.js"></script>
+  <script>
+    const changeStyle = (tyt) => {
+      const styleEle = document.getElementById('harryStyles')
+      console.log(styleEle)
+    styleEle.innerHTML = `
+      .content {
+        padding: 12px;
+      }
+      .element: {
+        display: block;
+        something: ${tyt}
+      }
+    `
+    console.log(styleEle)
+    }
+    changeStyle('hallaballa')
+  </script>
+</html>
+ 

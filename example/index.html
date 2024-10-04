@@ -32,6 +32,13 @@
         <a href="index.html">This is a hyperlink</a>
         <xmp><a href="index.html">This is a hyperlink</a></xmp>
       </div>
+      <div class="element"></div>
+      <div class="element">
+        <p>
+        Some text with a: <a href="index.html"><span class="material-symbols-outlined">delete</span>icon link inside</a> the text.
+        </p>
+        <xmp>Some text with a: <a href="index.html"><span class="material-symbols-outlined">delete</span>icon link inside</a> the text.</xmp>
+      </div>
       <div class="element">
         <a href="index.html" class="button">This is a link that looks like a button</a>
         <xmp><a href="index.html" class="button">This is a link that looks like a button</a></xmp>
@@ -143,6 +150,10 @@
         <button class="link">A button that looks like a link</button>
         <xmp><button class="link">A button that looks like a link</button></xmp>
       </div>
+      <div class="element">
+        <button class="link"><span class="material-symbols-outlined">delete</span>A button that looks like a link with icon<span class="material-symbols-outlined">open_in_new</span></button>
+        <xmp><button class="link">A button that looks like a link</button></xmp>
+      </div>
       
       <h2>Input elements</h2>
       <div class="element">
@@ -154,14 +165,26 @@
         <xmp><input disabled type="text" placeholder="Disabled input"></xmp>
       </div>
       <div class="element">
-        <div class="label-input">
+        <div class="label-input required">
           <label for="textElement">A label for the input</label>
           <input id="textElement" type="text" placeholder="Regular text" />
         </div>
         <xmp>
-          <div class="label-input">
+          <div class="label-input required">
             <label for="textElement">A label for the input</label>
             <input id="textElement" type="text" placeholder="Regular text" />
+          </div>
+        </xmp>
+      </div>
+      <div class="element">
+        <div class="label-input disabled">
+          <label for="dust">A label for the disabled input</label>
+          <input disabled id="dust" type="text" value="Im disabled" />
+        </div>
+        <xmp>
+          <div class="label-input disabled">
+            <label for="dust">A label for the disabled input</label>
+            <input disabled id="dust" type="text" value="Im disabled" />
           </div>
         </xmp>
       </div>
@@ -194,12 +217,12 @@
         </xmp>
       </div>
       <div class="element">
-        <div class="icon-input">
+        <div class="icon-input disabled">
           <span class="material-symbols-outlined">sentiment_frustrated</span>
           <input disabled type="text" placeholder="Huhu" value="Disabled icon input" />
         </div>
         <xmp>
-          <div class="icon-input">
+          <div class="icon-input disabled">
             <span class="material-symbols-outlined">sentiment_frustrated</span>
             <input disabled type="text" placeholder="Huhu" value="Disabled icon input" />
           </div>
@@ -309,11 +332,9 @@
           <button><span class="material-symbols-outlined">zoom_in</span></button>
         </div>
         <xmp>
-          <div class="icon-input label-input button-input round">
-            <label for="fancy3button">A label for the input</label>
-            <span class="material-symbols-outlined">search</span>
-            <input id="fancy3button" type="text" placeholder="With icon" />
-            <button><span class="material-symbols-outlined">search</span></button>
+          <div class="button-input round">
+            <input type="text" placeholder="Round with button" />
+            <button><span class="material-symbols-outlined">zoom_in</span></button>
           </div>
         </xmp>
       </div>
@@ -400,7 +421,7 @@
       </div>
 
       <div class="element">
-        <div class="label-select">
+        <div class="label-select required">
           <label for="a-select">A label for the select</label>
           <select id="a-select">
             <option>Option 1</option>
@@ -409,7 +430,7 @@
           </select>
         </div>
         <xmp>
-          <div class="label-select">
+          <div class="label-select required">
             <label for="a-select">A label for the select</label>
             <select id="a-select">
               <option>Option 1</option>
