@@ -10,33 +10,200 @@
 			@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 		</style>
     <link rel="stylesheet" href="./web-style.css" />
+    <script defer src="./scripts/current-theme.js"></script> <!-- adds global variable currentTheme  -->
     <script type="module" src="./scripts/app.js"></script> <!-- app functionality  -->
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Example</title>
+    <title>Css-components</title>
 	</head>
 	<body>
-    <div>
-      <h2>Theme</h2>
-      <p>Edit theme (show hide)</p>
-      <button id="add-style-button">Add style</button>
-      <button id="remove-style-button">Remove style</button>
-      <button id="change-theme-button">Change style</button>
+    <div class="top-bar">
+      <div class="app-logo">
+        🍌
+      </div>
+      <div class="app-title">
+        <h1>Css-components</h1>
+      </div>
+      <div class="app-menu">
+        <div>&nbsp;</div>
+      </div>
+      <button id="theming-button" title="edit theming">
+        <span class="material-symbols-outlined">palette</span>Theming
+      </button>
     </div>
+
+    <div id="theme-editor" class="hidde">
+      <div id="just-for-padding" style="padding: 0.5rem 2rem;">
+        <h2>Theme editor</h2>
+        <p><i>Reload page to reset</i></p>
+        <div class="presets-container">
+          <h3>Presets</h3>
+          <div id="theme-presets"></div> <!-- theme presets - gets populated by js -->
+        </div>
+        <div class="color-container">
+          <h3>Colors</h3>
+          <div class="colors">
+            <div class="label-input" style="width: 3.5rem;">
+              <label for="primary-color-picker">Primary</label>
+              <input id="primary-color-picker" type="color" />
+            </div>
+            <div class="label-input" style="width: 3.5rem;">
+              <label for="secondary-color-picker">Secondary</label>
+              <input id="secondary-color-picker" type="color" />
+            </div>
+            <div class="label-input" style="width: 3.5rem;">
+              <label for="tertiary-color-picker">Tertiary</label>
+              <input id="tertiary-color-picker" type="color" />
+            </div>
+            <div>
+              <button class="link"><span class="material-symbols-outlined">link</span></button>
+            </div>
+            <div class="label-input" style="width: 3.5rem;">
+              <label for="link-color-picker">Link</label>
+              <input id="link-color-picker" type="color" />
+            </div>
+            <div class="label-input" style="width: 3.5rem;">
+              <label for="link-hover-color-picker">Link:hover</label>
+              <input id="link-hover-color-picker" type="color" />
+            </div>
+            <div class="label-input" style="width: 3.5rem;">
+              <label for="font-color-picker">Font</label>
+              <input id="font-color-picker" type="color" />
+            </div>
+            <div class="label-input" style="width: 3.5rem;">
+              <label for="error-color-picker">Error</label>
+              <input id="error-color-picker" type="color" />
+            </div>
+            <div class="label-input" style="width: 3.5rem;">
+              <label for="warning-color-picker">Warning</label>
+              <input id="warning-color-picker" type="color" />
+            </div>
+            <div class="label-input" style="width: 3.5rem;">
+              <label for="success-color-picker">Success</label>
+              <input id="success-color-picker" type="color" />
+            </div>
+          </div>
+          <div>
+            <h3>Debug</h3>
+            <div>
+              <h4>Primary color luminance</h4>
+              <div id="primary-color-luminance"></div>
+              <h4>Primary color contrast to primary-background-color</h4>
+              <div id="primary-color-contrast-background"></div>
+              <h4>Contrast-generated color contrast to primary-background-color</h4>
+              <div id="generated-color-contrast-background"></div>
+              <h4>Black color contrast to primary-background-color</h4>
+              <div id="black-color-contrast-background"></div>
+              <h4>White color contrast to primary-background-color</h4>
+              <div id="white-color-contrast-background"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div>
+      <button id="remove-style-button">Remove style</button>
+    </div>
+    
     <div class="page-content">
-      <h1>Css-components</h1>
       <div>
-        <h2>Layout-presets</h2>
-        <p>Use one of the presets, or build your own</p>
-        <p>Top banner, side banner, blabla</p>
+        <h2>About</h2>
+        <p>A simple css-style generator, only CSS. The goal is to keep it simple, by using native HTML-elements and only CSS, to achieve accessibility and little overhead when developing for the web.</p>
+        <p>Everything here happens in your browser (so, ironically, you need javascript enabled here), nothing is done server-side, and nothing is sent to the server.</p>
+      </div>
+      <div>
+        <h2>Use in your own project</h2>
+        <div style="display: flex;">
+          <a id="generate-css-link" class="button filled" href="#">Generate CSS-file</a>
+        </div>
+        <p>To use this in your own project - download, insert in your own project and link to the css. You can also customize your own theme, or choose one of the predefined. You can also use the npm-package to generate your own css on the fly.</p>
       </div>
       <div>
       <div>
         <h2>Links</h2>
-        <div class="component">
-          <a href="/">Regular link</a>
+        <div class="component-example">
+          <div>This is a <a href="#">regular link</a> for the user to click on.</div>
         </div>
-        <div class="component">
-          <a href="/">Link with icon<span class="material-symbols-outlined">favorite</span></a>
+        <div class="component-example">
+          <div>
+            This is a more fancy
+            <a href="#">link<span class="material-symbols-outlined">favorite</span></a>
+            with an icon beside it.
+          </div>
+        </div>
+        <div class="component-example">
+          <a href="#" class="button">A link that looks like a button</a>
+          <a href="#" class="button filled">And another<span class="material-symbols-outlined">arrow_forward</span></a>
+        </div>
+      </div>
+      <div>
+        <h2>Buttons</h2>
+        <div class="component-example">
+          <button>Regular button</button>
+          <button class="filled">Filled button</button>
+        </div>
+        <div class="component-example">
+          <button class="squared">Squared button</button>
+          <button class="squared filled">Squared filled button</button>
+        </div>
+        <div class="component-example">
+          <button><span class="material-symbols-outlined">home</span>Button with icon</button>
+          <button class="squared filled">Squared filled button with icon<span class="material-symbols-outlined">delete</span></button>
+        </div>
+        <div class="component-example">
+          <button class="icon"><span class="material-symbols-outlined">home</span></button>
+          <button class="icon filled"><span class="material-symbols-outlined">home</span></button>
+        </div>
+        <div class="component-example">
+          <button class="action"><span class="material-symbols-outlined">more_vert</span></button>
+          <div style="padding: 8px; background-color: var(--primary-color-20);">
+            <button class="action"><span class="material-symbols-outlined">more_vert</span></button>
+          </div>
+        </div>
+        <div class="component-example">
+          <button class="link">A button that looks like a link</button>
+        </div>
+        <div class="component-example">
+          <button class="link">Another link-button<span class="material-symbols-outlined">open_in_new</span></button>
+        </div>
+        <div class="component-example">
+          <button class="blank">A button that just is there but no styling...</button>
+        </div>
+      </div>
+      <div>
+        <h2>Inputs</h2>
+        <div class="component-example" data-title="Regular text input">
+          <input type="text" placeholder="Text input" />
+        </div>
+      </div>
+
+
+      <div>
+        <h2>Loading spinner</h2>
+        <div class="component-example">
+          <div class="spinner" style="width: 10rem">
+            <svg viewBox="0 0 50 50" focusable="false" aria-label="Laster...">
+              <title>Laster...</title>
+              <circle cx="25" cy="25" r="20"></circle>
+              <circle cx="25" cy="25" r="20"></circle>
+            </svg>
+          </div>
+        </div>
+        <div class="component-example">
+          <div class="spinner" style="width: 6rem">
+            <svg viewBox="0 0 50 50" focusable="false" aria-label="Laster...">
+              <title>Laster...</title>
+              <circle cx="25" cy="25" r="20"></circle>
+              <circle cx="25" cy="25" r="20"></circle>
+            </svg>
+          </div>
+          <div class="spinner" style="width: 2rem">
+            <svg viewBox="0 0 50 50" focusable="false" aria-label="Laster...">
+              <title>Laster...</title>
+              <circle cx="25" cy="25" r="20"></circle>
+              <circle cx="25" cy="25" r="20"></circle>
+            </svg>
+          </div>
         </div>
       </div>
     </div>

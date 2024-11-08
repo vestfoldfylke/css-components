@@ -4,7 +4,41 @@
 
 /* AUTO GENERATED CSS */
 :root {
-	/* COLOR VARIANTS */
+	/* OLD COLOR VARIANTS */
+	--old--primary-color-10: rgb(230, 238, 239);
+	--old--primary-color-20: rgb(204, 220, 223);
+	--old--primary-color-30: rgb(179, 203, 207);
+	--old--primary-color-40: rgb(153, 186, 191);
+	--old--primary-color-50: rgb(128, 169, 176);
+	--old--primary-color-60: rgb(102, 151, 160);
+	--old--primary-color-70: rgb(77, 134, 144);
+	--old--primary-color-80: rgb(51, 117, 128);
+	--old--primary-color-90: rgb(26, 99, 112);
+	--old--primary-color: rgb(0, 82, 96);
+	--old--secondary-color-10: rgb(233, 244, 239);
+	--old--secondary-color-20: rgb(210, 234, 224);
+	--old--secondary-color-30: rgb(188, 223, 208);
+	--old--secondary-color-40: rgb(165, 213, 192);
+	--old--secondary-color-50: rgb(143, 202, 177);
+	--old--secondary-color-60: rgb(121, 191, 161);
+	--old--secondary-color-70: rgb(98, 181, 145);
+	--old--secondary-color-80: rgb(76, 170, 129);
+	--old--secondary-color-90: rgb(53, 160, 114);
+	--old--secondary-color: rgb(31, 149, 98);
+	--old--tertiary-color-10: rgb(230, 245, 249);
+	--old--tertiary-color-20: rgb(204, 235, 243);
+	--old--tertiary-color-30: rgb(179, 225, 237);
+	--old--tertiary-color-40: rgb(153, 215, 231);
+	--old--tertiary-color-50: rgb(128, 205, 225);
+	--old--tertiary-color-60: rgb(102, 195, 218);
+	--old--tertiary-color-70: rgb(77, 185, 212);
+	--old--tertiary-color-80: rgb(51, 175, 206);
+	--old--tertiary-color-90: rgb(26, 165, 200);
+	--old--tertiary-color: rgb(0, 155, 194);
+
+	/* PRIMARY COLOR */
+	/* Original primary color: 0,82,96. Accessible color: rgb(0, 82, 96). Contrast color: rgb(222, 233, 234). Contrast: 7.134196128862356 */
+	/* PRIMARY COLOR VARIANTS */
 	--primary-color-10: rgb(230, 238, 239);
 	--primary-color-20: rgb(204, 220, 223);
 	--primary-color-30: rgb(179, 203, 207);
@@ -13,31 +47,51 @@
 	--primary-color-60: rgb(102, 151, 160);
 	--primary-color-70: rgb(77, 134, 144);
 	--primary-color-80: rgb(51, 117, 128);
-	--primary-color-90: rgb(25, 99, 112);
+	--primary-color-90: rgb(26, 99, 112);
 	--primary-color: rgb(0, 82, 96);
-	--secondary-color-10: rgb(233, 244, 239);
-	--secondary-color-20: rgb(210, 234, 224);
-	--secondary-color-30: rgb(188, 223, 208);
-	--secondary-color-40: rgb(165, 213, 192);
-	--secondary-color-50: rgb(143, 202, 177);
-	--secondary-color-60: rgb(121, 191, 161);
-	--secondary-color-70: rgb(98, 181, 145);
-	--secondary-color-80: rgb(76, 170, 129);
-	--secondary-color-90: rgb(53, 160, 114);
-	--secondary-color: rgb(31, 149, 98);
-	--tertiary-color-10: rgb(230, 245, 249);
-	--tertiary-color-20: rgb(204, 235, 243);
-	--tertiary-color-30: rgb(179, 225, 237);
-	--tertiary-color-40: rgb(153, 215, 231);
-	--tertiary-color-50: rgb(128, 205, 225);
-	--tertiary-color-60: rgb(102, 195, 218);
-	--tertiary-color-70: rgb(77, 185, 212);
-	--tertiary-color-80: rgb(51, 175, 206);
-	--tertiary-color-90: rgb(25, 165, 200);
-	--tertiary-color: rgb(0, 155, 194);
+	/* SPECIFIC PRIMARY COLORS */
+	--on-primary-color: rgb(222, 233, 234);
+	--primary-background-color: rgb(242, 246, 247); /* Tinted background color. Original: rgb(242, 246, 247) */
+	--on-primary-background-color: rgb(0, 82, 96); /* Tinted on-background (contrast) color. Original: rgb(0, 82, 96). Contrast to bakkground: 8.123852769651325 */
+
+	/* SECONDARY COLOR */
+	/* Original secondary color: 31,149,98. Accessible color: rgb(21, 101, 67). Contrast color: rgb(255, 255, 255). Contrast: 7.060229437151407 */
+	/* SECONDARY COLOR VARIANTS */
+	--secondary-color-10: rgb(232, 240, 236);
+	--secondary-color-20: rgb(208, 224, 217);
+	--secondary-color-30: rgb(185, 209, 199);
+	--secondary-color-40: rgb(161, 193, 180);
+	--secondary-color-50: rgb(138, 178, 161);
+	--secondary-color-60: rgb(115, 163, 142);
+	--secondary-color-70: rgb(91, 147, 123);
+	--secondary-color-80: rgb(68, 132, 105);
+	--secondary-color-90: rgb(44, 116, 86);
+	--secondary-color: rgb(21, 101, 67);
+	/* SPECIFIC SECONDARY COLORS */
+	--on-secondary-color: rgb(255, 255, 255);
+	--secondary-background-color: rgb(243, 247, 246); /* Tinted background color. Original: rgb(243, 247, 246) */
+	--on-secondary-background-color: rgb(20, 96, 64); /* Tinted on-background (contrast) color. Original: rgb(21, 101, 67). Contrast to bakkground: 7.002709871921025 */
+
+	/* TERTIARY COLOR */
+	/* Original tertiary color: 0,155,194. Accessible color: rgb(18, 162, 198). Contrast color: rgb(0, 0, 0). Contrast: 7.009295230274424 */
+	/* TERTIARY COLOR VARIANTS */
+	--tertiary-color-10: rgb(231, 246, 249);
+	--tertiary-color-20: rgb(208, 236, 244);
+	--tertiary-color-30: rgb(184, 227, 238);
+	--tertiary-color-40: rgb(160, 218, 232);
+	--tertiary-color-50: rgb(137, 209, 227);
+	--tertiary-color-60: rgb(113, 199, 221);
+	--tertiary-color-70: rgb(89, 190, 215);
+	--tertiary-color-80: rgb(65, 181, 209);
+	--tertiary-color-90: rgb(42, 171, 204);
+	--tertiary-color: rgb(18, 162, 198);
+	/* SPECIFIC TERTIARY COLORS */
+	--on-tertiary-color: rgb(0, 0, 0);
+	--tertiary-background-color: rgb(243, 250, 252); /* Tinted background color. Original: rgb(243, 250, 252) */
+	--on-tertiary-background-color: rgb(10, 92, 113); /* Tinted on-background (contrast) color. Original: rgb(18, 162, 198). Contrast to bakkground: 7.149279562649639 */
+
 
 	/* SPECIFIC COLORS */
-	--primary-background-color: rgb(242, 246, 247);
 	--font-color: rgb(0, 0, 0);
 	--font-color-inverted: rgb(255, 255, 255);
 	--link-color: rgb(0, 82, 96);
@@ -87,17 +141,17 @@ html, body {
 
 /* FOCUS */
 :focus-visible {
-	outline: 4px solid var(--primary-color);
+	outline: 4px solid var(--on-primary-background-color);
 	outline-offset: 1px;
 }
 
 .focus-within:focus-within {
-	outline: 4px solid var(--primary-color);
+	outline: 4px solid var(--on-primary-background-color);
 	outline-offset: -2px;
 }
 
 .inward-focus-within:focus-within {
-	outline: 4px solid var(--primary-color);
+	outline: 4px solid var(--on-primary-background-color);
 	outline-offset: -4px;
 }
 
@@ -134,8 +188,8 @@ button, a.button {
 	align-items: center;
 	gap: var(--spacing-small);
 	background-color: var(--primary-background-color);
-	color: var(--primary-color);
-	border: 1px solid var(--primary-color);
+	color: var(--on-primary-background-color);
+	border: 1px solid var(--on-primary-background-color);
 	border-radius: 2rem;
 	min-height: 3rem;
 	padding: 0px var(--spacing-large);
@@ -154,7 +208,7 @@ button:active, a.button:active {
 
 button.filled, a.button.filled, .button-input > button {
 	background-color: var(--primary-color);
-	color: var(--font-color-inverted);
+	color: var(--on-primary-color);
 }
 
 button.filled:hover, a.button.filled:hover, .button-input > button:hover {
@@ -246,14 +300,14 @@ input {
   min-height: 3.5rem;
 	padding: 0rem var(--spacing);
 	background-color: var(--primary-background-color);
-	border: 2px solid var(--primary-color);
+	border: 2px solid var(--on-primary-background-color);
 	border-radius: 0.4rem;
 }
 
 .icon-input, .button-input, .label-input {
 	display: flex;
 	align-items: center;
-	border: 2px solid var(--primary-color);
+	border: 2px solid var(--on-primary-background-color);
 	border-radius: 0.4rem;
 }
 
@@ -280,12 +334,12 @@ input:disabled:hover, .icon-input.disabled:hover, .button-input.disabled:hover, 
 }
 
 input:focus-visible, .icon-input:focus-within, .button-input:focus-within, .label-input:focus-within {
-	outline: 4px solid var(--primary-color);
+	outline: 4px solid var(--on-primary-background-color);
 	outline-offset: -4px;
 }
 
 .icon-input input:focus-visible, .button-input input:focus-visible, .label-input input:focus-visible {
-	border: 0px solid var(--primary-color);
+	border: 0px solid var(--on-primary-background-color);
 	outline: 0px;
 }
 
@@ -294,24 +348,24 @@ input:focus-visible, .icon-input:focus-within, .button-input:focus-within, .labe
 	border-top: 0px;
 	border-right: 0px;
 	border-bottom: 0px;
-	border: 0px solid var(--primary-color);
+	border: 0px solid var(--on-primary-background-color);
 	border-radius: 0rem;
 }
 
 .button-input > button:focus-visible {
-	outline: 6px solid var(--primary-color);
+	outline: 6px solid var(--on-primary-background-color);
 	outline-offset: 3px;
 }
 
 .button-input input, .label-input input {
-	border: 0px solid var(--primary-color);
+	border: 0px solid var(--on-primary-background-color);
 	flex-grow: 1;
 }
 
 /* Icon gets extra padding */
 .icon-input input {
 	padding: 0px 16px 0px 0px;
-	border: 0px solid var(--primary-color);
+	border: 0px solid var(--on-primary-background-color);
 	flex-grow: 1;
 }
 
@@ -358,6 +412,7 @@ input:focus-visible, .icon-input:focus-within, .button-input:focus-within, .labe
 	font-weight: bold;
 }
 
+/* Specific input types */
 input[type="radio"], input[type="checkbox"] {
 	min-height: 0rem;
 	transform: scale(1.5);
@@ -366,17 +421,22 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 input[type="radio"]:focus-visible, input[type="checkbox"]:focus-visible {
-	outline: 4px solid var(--primary-color);
+	outline: 4px solid var(--on-primary-background-color);
 	outline-offset: 1px;
+}
+
+input[type="color"] {
+	padding: 0rem;
+	min-height: 1rem;
+	cursor: pointer;
 }
 
 textarea {
 	font-family: inherit;
 	font-size: var(--font-size-root);
-	border: 2px solid var(--primary-color);
 	padding: var(--spacing-small);
 	background-color: var(--primary-background-color);
-	border: 2px solid var(--primary-color);
+	border: 2px solid var(--on-primary-background-color);
 	border-radius: 0.4rem;
 }
 
@@ -389,7 +449,7 @@ select {
 	font-size: var(--font-size-root);
 	min-height: 3.5rem;
 	height: 3.5rem;
-	border: 2px solid var(--primary-color);
+	border: 2px solid var(--on-primary-background-color);
 	padding: 0rem var(--spacing);
 	background-color: var(--primary-background-color);
 	border-radius: 0.4rem;
@@ -421,25 +481,7 @@ select:hover {
 	top: -1.375rem;
 }
 
-/* Loading / Spinner */
-circle {
-	fill: transparent;
-	stroke-width: 5;
-	stroke-linecap: round;
-}
-svg {
-	animation: svg-rotate 1.4s linear infinite;
-}
-svg circle:nth-child(2) {
-	stroke: #eeeeee;
-}
-svg circle:nth-child(3) {
-	animation: circle-rotate 1.4s ease-in-out infinite both;
-	stroke-dasharray: 5rem, 124rem;
-	stroke-dashoffset: 0;
-	stroke: var(--primary-color)
-}
-
+/* Loading-spinner */
 circle {
 	fill: transparent;
 	stroke-width: 5;
@@ -455,7 +497,7 @@ svg circle:nth-child(3) {
 	animation: circle-rotate 1.4s ease-in-out infinite both;
 	stroke-dasharray: 80px,200px;
 	stroke-dashoffset: 0;
-	stroke: #005260;
+	stroke: var(--on-primary-background-color);
 }
 @keyframes svg-rotate {
 	to {
@@ -479,32 +521,6 @@ svg circle:nth-child(3) {
 			stroke-dashoffset: -120px
 	}
 }
-
-/*
-@keyframes svg-rotate {
-	to {
-			transform: rotate(1turn)
-	}
-}
-
-@keyframes circle-rotate {
-	0% {
-			stroke-dasharray: 0.0625rem,124rem;
-			stroke-dashoffset: 0
-	}
-
-	50% {
-			stroke-dasharray: 62rem,124rem;
-			stroke-dashoffset: -1rem;
-	}
-
-	to {
-			stroke-dasharray: 62rem,124rem;
-			stroke-dashoffset: -8rem
-	}
-}
-*/
-
 
 /*
 <a>

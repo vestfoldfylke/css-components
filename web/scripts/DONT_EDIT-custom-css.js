@@ -3,17 +3,17 @@ export const customCss = `/* MANUAL CSS */
 
 /* FOCUS */
 :focus-visible {
-	outline: 4px solid var(--primary-color);
+	outline: 4px solid var(--on-primary-background-color);
 	outline-offset: 1px;
 }
 
 .focus-within:focus-within {
-	outline: 4px solid var(--primary-color);
+	outline: 4px solid var(--on-primary-background-color);
 	outline-offset: -2px;
 }
 
 .inward-focus-within:focus-within {
-	outline: 4px solid var(--primary-color);
+	outline: 4px solid var(--on-primary-background-color);
 	outline-offset: -4px;
 }
 
@@ -50,8 +50,8 @@ button, a.button {
 	align-items: center;
 	gap: var(--spacing-small);
 	background-color: var(--primary-background-color);
-	color: var(--primary-color);
-	border: 1px solid var(--primary-color);
+	color: var(--on-primary-background-color);
+	border: 1px solid var(--on-primary-background-color);
 	border-radius: 2rem;
 	min-height: 3rem;
 	padding: 0px var(--spacing-large);
@@ -70,7 +70,7 @@ button:active, a.button:active {
 
 button.filled, a.button.filled, .button-input > button {
 	background-color: var(--primary-color);
-	color: var(--font-color-inverted);
+	color: var(--on-primary-color);
 }
 
 button.filled:hover, a.button.filled:hover, .button-input > button:hover {
@@ -162,14 +162,14 @@ input {
   min-height: 3.5rem;
 	padding: 0rem var(--spacing);
 	background-color: var(--primary-background-color);
-	border: 2px solid var(--primary-color);
+	border: 2px solid var(--on-primary-background-color);
 	border-radius: 0.4rem;
 }
 
 .icon-input, .button-input, .label-input {
 	display: flex;
 	align-items: center;
-	border: 2px solid var(--primary-color);
+	border: 2px solid var(--on-primary-background-color);
 	border-radius: 0.4rem;
 }
 
@@ -196,12 +196,12 @@ input:disabled:hover, .icon-input.disabled:hover, .button-input.disabled:hover, 
 }
 
 input:focus-visible, .icon-input:focus-within, .button-input:focus-within, .label-input:focus-within {
-	outline: 4px solid var(--primary-color);
+	outline: 4px solid var(--on-primary-background-color);
 	outline-offset: -4px;
 }
 
 .icon-input input:focus-visible, .button-input input:focus-visible, .label-input input:focus-visible {
-	border: 0px solid var(--primary-color);
+	border: 0px solid var(--on-primary-background-color);
 	outline: 0px;
 }
 
@@ -210,24 +210,24 @@ input:focus-visible, .icon-input:focus-within, .button-input:focus-within, .labe
 	border-top: 0px;
 	border-right: 0px;
 	border-bottom: 0px;
-	border: 0px solid var(--primary-color);
+	border: 0px solid var(--on-primary-background-color);
 	border-radius: 0rem;
 }
 
 .button-input > button:focus-visible {
-	outline: 6px solid var(--primary-color);
+	outline: 6px solid var(--on-primary-background-color);
 	outline-offset: 3px;
 }
 
 .button-input input, .label-input input {
-	border: 0px solid var(--primary-color);
+	border: 0px solid var(--on-primary-background-color);
 	flex-grow: 1;
 }
 
 /* Icon gets extra padding */
 .icon-input input {
 	padding: 0px 16px 0px 0px;
-	border: 0px solid var(--primary-color);
+	border: 0px solid var(--on-primary-background-color);
 	flex-grow: 1;
 }
 
@@ -274,6 +274,7 @@ input:focus-visible, .icon-input:focus-within, .button-input:focus-within, .labe
 	font-weight: bold;
 }
 
+/* Specific input types */
 input[type="radio"], input[type="checkbox"] {
 	min-height: 0rem;
 	transform: scale(1.5);
@@ -282,17 +283,22 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 input[type="radio"]:focus-visible, input[type="checkbox"]:focus-visible {
-	outline: 4px solid var(--primary-color);
+	outline: 4px solid var(--on-primary-background-color);
 	outline-offset: 1px;
+}
+
+input[type="color"] {
+	padding: 0rem;
+	min-height: 1rem;
+	cursor: pointer;
 }
 
 textarea {
 	font-family: inherit;
 	font-size: var(--font-size-root);
-	border: 2px solid var(--primary-color);
 	padding: var(--spacing-small);
 	background-color: var(--primary-background-color);
-	border: 2px solid var(--primary-color);
+	border: 2px solid var(--on-primary-background-color);
 	border-radius: 0.4rem;
 }
 
@@ -305,7 +311,7 @@ select {
 	font-size: var(--font-size-root);
 	min-height: 3.5rem;
 	height: 3.5rem;
-	border: 2px solid var(--primary-color);
+	border: 2px solid var(--on-primary-background-color);
 	padding: 0rem var(--spacing);
 	background-color: var(--primary-background-color);
 	border-radius: 0.4rem;
@@ -337,25 +343,7 @@ select:hover {
 	top: -1.375rem;
 }
 
-/* Loading / Spinner */
-circle {
-	fill: transparent;
-	stroke-width: 5;
-	stroke-linecap: round;
-}
-svg {
-	animation: svg-rotate 1.4s linear infinite;
-}
-svg circle:nth-child(2) {
-	stroke: #eeeeee;
-}
-svg circle:nth-child(3) {
-	animation: circle-rotate 1.4s ease-in-out infinite both;
-	stroke-dasharray: 5rem, 124rem;
-	stroke-dashoffset: 0;
-	stroke: var(--primary-color)
-}
-
+/* Loading-spinner */
 circle {
 	fill: transparent;
 	stroke-width: 5;
@@ -371,7 +359,7 @@ svg circle:nth-child(3) {
 	animation: circle-rotate 1.4s ease-in-out infinite both;
 	stroke-dasharray: 80px,200px;
 	stroke-dashoffset: 0;
-	stroke: #005260;
+	stroke: var(--on-primary-background-color);
 }
 @keyframes svg-rotate {
 	to {
@@ -395,32 +383,6 @@ svg circle:nth-child(3) {
 			stroke-dashoffset: -120px
 	}
 }
-
-/*
-@keyframes svg-rotate {
-	to {
-			transform: rotate(1turn)
-	}
-}
-
-@keyframes circle-rotate {
-	0% {
-			stroke-dasharray: 0.0625rem,124rem;
-			stroke-dashoffset: 0
-	}
-
-	50% {
-			stroke-dasharray: 62rem,124rem;
-			stroke-dashoffset: -1rem;
-	}
-
-	to {
-			stroke-dasharray: 62rem,124rem;
-			stroke-dashoffset: -8rem
-	}
-}
-*/
-
 
 /*
 <a>
