@@ -10,18 +10,16 @@ updateCss()
 
 // Function for removing entire css
 const removeCss = () => {
-	customStyleSheet.textContent = ''
+  customStyleSheet.textContent = ''
 }
 const removeStyleButton = document.getElementById('remove-style-button')
 removeStyleButton.addEventListener('click', removeCss)
-
 
 // Tweak component examples
 tweakComponentExamples()
 
 // Setup theme editor
 setupThemeEditor()
-
 
 /*
 setupTheme setter opp

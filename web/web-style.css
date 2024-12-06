@@ -11,7 +11,7 @@
 }
 
 .component-example {
-	border: 1px solid var(--primary-color);
+	border: 1px solid var(--on-primary-background-color);
 	margin: 0.5rem 0rem;
 }
 .examples-container {

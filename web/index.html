@@ -82,20 +82,14 @@
               <input id="success-color-picker" type="color" />
             </div>
           </div>
-          <div>
-            <h3>Debug</h3>
-            <div>
-              <h4>Primary color luminance</h4>
-              <div id="primary-color-luminance"></div>
-              <h4>Primary color contrast to primary-background-color</h4>
-              <div id="primary-color-contrast-background"></div>
-              <h4>Contrast-generated color contrast to primary-background-color</h4>
-              <div id="generated-color-contrast-background"></div>
-              <h4>Black color contrast to primary-background-color</h4>
-              <div id="black-color-contrast-background"></div>
-              <h4>White color contrast to primary-background-color</h4>
-              <div id="white-color-contrast-background"></div>
-            </div>
+          <div class="contrast-increaser" style="display: none;">
+            <h4>Contrast increaser method</h4>
+            <input type="radio" id="contrast-increaser-tint-shade" name="contrast-increaser" value="tintshade" />
+            <label for="contrast-increaser-tint-shade">tint/shade (RBG)</label><br>
+            <input type="radio" id="contrast-increaser-max-saturation-lightness" name="contrast-increaser" value="maxSaturationLightness" />
+            <label for="contrast-increaser-max-saturation-lightness">MAXsaturation+lightness (HSL)</label><br>
+            <input type="radio" id="contrast-increaser-saturation-lightness-prefer-white" name="contrast-increaser" value="saturationLightnessPreferWhite" />
+            <label for="contrast-increaser-saturation-lightness-prefer-white">saturation+lightness (prefer white) (HSL)</label><br>
           </div>
         </div>
       </div>
@@ -143,6 +137,14 @@
           <button class="filled">Filled button</button>
         </div>
         <div class="component-example">
+          <button class="secondary">Secondary button</button>
+          <button class="filled secondary">Secondary filled button</button>
+        </div>
+        <div class="component-example">
+          <button class="tertiary">Tertiary button</button>
+          <button class="filled tertiary">Tertiary filled button</button>
+        </div>
+        <div class="component-example">
           <button class="squared">Squared button</button>
           <button class="squared filled">Squared filled button</button>
         </div>
@@ -153,6 +155,10 @@
         <div class="component-example">
           <button class="icon"><span class="material-symbols-outlined">home</span></button>
           <button class="icon filled"><span class="material-symbols-outlined">home</span></button>
+          <button class="icon secondary"><span class="material-symbols-outlined">home</span></button>
+          <button class="icon filled secondary"><span class="material-symbols-outlined">home</span></button>
+          <button class="icon tertiary"><span class="material-symbols-outlined">home</span></button>
+          <button class="icon filled tertiary"><span class="material-symbols-outlined">home</span></button>
         </div>
         <div class="component-example">
           <button class="action"><span class="material-symbols-outlined">more_vert</span></button>

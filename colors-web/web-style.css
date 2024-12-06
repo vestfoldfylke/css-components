@@ -1,0 +1,84 @@
+:root {
+	/*
+	vann #005260
+	hav #1C6C6C
+	fjord #14828C
+	himmel #009BC2
+	gress #1F9562
+	gran #2F7542
+	korn #A5983A
+	stein #7B7B7A
+	berg #727062
+	strand #8A6C3E
+	siv #BC7726
+	bark #996954
+	nype #B7173D
+	plomme #5A2E61
+	blåveis #414681
+	*/
+	--original-color-1: #005260;
+	--original-color-2: #1C6C6C;
+	--original-color-3: #14828C;
+	--original-color-4: #009BC2;
+	--original-color-5: #1F9562;
+	--original-color-6: #2F7542;
+	--original-color-7: #A5983A;
+	--original-color-8: #7B7B7A;
+	--original-color-9: #727062;
+	--original-color-10: #8A6C3E;
+	--original-color-11: #BC7726;
+	--original-color-12: #996954;
+	--original-color-13: #B7173D;
+	--original-color-14: #5A2E61;
+	--original-color-15: #414681;
+
+	--color-1: #ff0000;
+	--color-2: #00ff00;
+	--color-3: #0000ff;
+	--color-4: #0000ff;
+	--color-5: #0000ff;
+	--color-6: #0000ff;
+	--color-7: #0000ff;
+	--color-8: #0000ff;
+	--color-9: #0000ff;
+	--color-10: #0000ff;
+	--color-11: #0000ff;
+	--color-12: #0000ff;
+	--color-13: #0000ff;
+	--color-14: #0000ff;
+	--color-15: #0000ff;
+}
+.color-container {
+	display: flex;
+	gap: 2px;
+}
+.color {
+	width: 20px;
+	height: 20px;
+}
+
+/* OKLCH stuff */
+.hues-controls {
+
+}
+
+.lightness-control, .chroma-control, .steps-control, .starthue-control {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+#base-color {
+	width: 5rem;
+	height: 5rem;
+}
+
+.hue-step:hover {
+	z-index: 2;
+	outline: 2px solid black;
+}
+
+.hue-step:hover .hue-step-info-box {
+	display: block !important;
+}
+

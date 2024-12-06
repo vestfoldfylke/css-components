@@ -1,4 +1,4 @@
-import { generateCssFile } from "../esm/index.js"
+import { generateCssFile } from '../esm/index.js'
 
 {
   // Updates dev css file with newest auto-css (colors and stuff)
@@ -13,12 +13,12 @@ import { generateCssFile } from "../esm/index.js"
   const customTheme = {
     colors: {
       // Convert colors to rgb as well, if they are not
-      primary:  "#005260", // Vann (can use rgb as value [x, x, x] as well instead of hex)
-      secondary: "#1F9562", // Gress
-      tertiary: "#009BC2", // Himmel
+      primary: '#005260', // Vann (can use rgb as value [x, x, x] as well instead of hex)
+      secondary: '#1F9562', // Gress
+      tertiary: '#009BC2', // Himmel
       link: {
-        base: "#005260", // Vann
-        hover: "#000000" // Sort
+        base: '#005260', // Vann
+        hover: '#000000' // Sort
       },
       font: '#000000' // Sort
     },
@@ -38,12 +38,12 @@ import { generateCssFile } from "../esm/index.js"
   const minElevTheme = {
     colors: {
       // Convert colors to rgb as well, if they are not
-      primary:  "#005260", // Vann (can use rgb as value [x, x, x] as well instead of hex)
-      secondary: "#1F9562", // Gress
-      tertiary: "#009BC2", // Himmel
+      primary: '#005260', // Vann (can use rgb as value [x, x, x] as well instead of hex)
+      secondary: '#1F9562', // Gress
+      tertiary: '#009BC2', // Himmel
       link: {
-        base: "#005260", // Vann
-        hover: "#000000" // Sort
+        base: '#005260', // Vann
+        hover: '#000000' // Sort
       },
       font: '#000000' // Sort
     },
@@ -63,12 +63,12 @@ import { generateCssFile } from "../esm/index.js"
   const elevdokTheme = {
     colors: {
       // Convert colors to rgb as well, if they are not
-      primary:  "#414681", // Blåveis (can use rgb as value [x, x, x] as well instead of hex)
-      secondary: "#5A2E61", // Plomme
-      tertiary: "#A5983A", // Korn
+      primary: '#414681', // Blåveis (can use rgb as value [x, x, x] as well instead of hex)
+      secondary: '#5A2E61', // Plomme
+      tertiary: '#A5983A', // Korn
       link: {
-        base: "#005260", // Vann
-        hover: "#000000" // Sort
+        base: '#005260', // Vann
+        hover: '#000000' // Sort
       },
       font: '#000000' // Sort
     },

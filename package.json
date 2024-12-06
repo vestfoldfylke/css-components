@@ -12,7 +12,8 @@
   },
   "scripts": {
     "test": "node --test",
-    "dev": "vite serve web"
+    "dev": "vite serve web",
+    "dev --colors": "vite serve colors-web"
   },
   "repository": {
     "type": "git",
@@ -31,5 +32,8 @@
   "homepage": "https://github.com/vestfoldfylke/css-components#readme",
   "devDependencies": {
     "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "colorjs.io": "^0.5.2"
   }
 }

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="no">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <style>
+			@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+		</style>
+    <link rel="stylesheet" href="./web-style.css" />
+    <script type="module" src="./scripts/app.js"></script> <!-- app functionality  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+    <div class="content">
+      <div class="oklch-explorer">
+        <h1>OKLCH color space explorer</h1>
+        <div id="hues">
+          <h2>Hues</h2>
+          <div class="hues-controls">
+            <label for="base-color">Base color</label>
+            <div class="base-color-picker">
+              <input id="base-color" type="color" value="#ff0000" />
+            </div>
+            <br />
+            <label for="starthue-number">Starting hue</label>
+            <div class="starthue-control">
+              <input id="starthue-number" type="number" min="0" max="360" value="0" />
+              <input id="starthue-slider" type="range" min="0" max="360" value="0" />
+            </div>
+            <label for="lightness-number">Lightness</label>
+            <div class="lightness-control">
+              <input id="lightness-number" type="number" min="0" max="100" value="65" />
+              <input id="lightness-slider" type="range" min="0" max="100" value="65" />
+            </div>
+            <label for="chroma-number">Chroma</label>
+            <div class="chroma-control">
+              <input id="chroma-number" type="number" min="0" max="0.4" step="0.01" value="0.2" />
+              <input id="chroma-slider" type="range" min="0" max="0.4" step="0.0001" value="0.2" />
+            </div>
+            <label for="steps-number">Steps</label>
+            <div class="steps-control">
+              <input id="steps-number" type="number" min="1" max="3600" value="360" />
+              <input id="steps-slider" type="range" min="1" max="3600" value="360" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div class="fylkesgreier">
+        <h1>Fylkecolors for fun</h1>
+        <div class="color-container">
+          <div class="color" style="background-color: var(--original-color-1);"></div>
+          <div class="color" style="background-color: var(--original-color-2);"></div>
+          <div class="color" style="background-color: var(--original-color-3);"></div>
+          <div class="color" style="background-color: var(--original-color-4);"></div>
+          <div class="color" style="background-color: var(--original-color-5);"></div>
+          <div class="color" style="background-color: var(--original-color-6);"></div>
+          <div class="color" style="background-color: var(--original-color-7);"></div>
+          <div class="color" style="background-color: var(--original-color-8);"></div>
+          <div class="color" style="background-color: var(--original-color-9);"></div>
+          <div class="color" style="background-color: var(--original-color-10);"></div>
+          <div class="color" style="background-color: var(--original-color-11);"></div>
+          <div class="color" style="background-color: var(--original-color-12);"></div>
+          <div class="color" style="background-color: var(--original-color-13);"></div>
+          <div class="color" style="background-color: var(--original-color-14);"></div>
+          <div class="color" style="background-color: var(--original-color-15);"></div>
+        </div>
+        <!--
+        <div class="color-container">
+          <div class="color" style="background-color: var(--color-1);"></div>
+          <div class="color" style="background-color: var(--color-2);"></div>
+          <div class="color" style="background-color: var(--color-3);"></div>
+          <div class="color" style="background-color: var(--color-4);"></div>
+          <div class="color" style="background-color: var(--color-5);"></div>
+          <div class="color" style="background-color: var(--color-6);"></div>
+          <div class="color" style="background-color: var(--color-7);"></div>
+          <div class="color" style="background-color: var(--color-8);"></div>
+          <div class="color" style="background-color: var(--color-9);"></div>
+          <div class="color" style="background-color: var(--color-10);"></div>
+          <div class="color" style="background-color: var(--color-11);"></div>
+          <div class="color" style="background-color: var(--color-12);"></div>
+          <div class="color" style="background-color: var(--color-13);"></div>
+          <div class="color" style="background-color: var(--color-14);"></div>
+          <div class="color" style="background-color: var(--color-15);"></div>
+        </div>
+        -->
+      </div>
+    </div>
+	</body>
+</html>
+ 

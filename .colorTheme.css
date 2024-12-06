@@ -1,0 +1,164 @@
+:root {
+	/* COLOR VARIANTS */
+	--primary-color--10: rgb(230, 238, 239);
+	--primary-color--20: rgb(204, 220, 223);
+	--primary-color--30: rgb(179, 203, 207);
+	--primary-color--40: rgb(153, 186, 191);
+	--primary-color--50: rgb(128, 169, 176);
+	--primary-color--60: rgb(102, 151, 160);
+	--primary-color--70: rgb(77, 134, 144);
+	--primary-color--80: rgb(51, 117, 128);
+	--primary-color--90: rgb(25, 99, 112);
+	--primary-color: rgb(0, 82, 96);
+	--secondary-color--10: rgb(233, 244, 239);
+	--secondary-color--20: rgb(210, 234, 224);
+	--secondary-color--30: rgb(188, 223, 208);
+	--secondary-color--40: rgb(165, 213, 192);
+	--secondary-color--50: rgb(143, 202, 177);
+	--secondary-color--60: rgb(121, 191, 161);
+	--secondary-color--70: rgb(98, 181, 145);
+	--secondary-color--80: rgb(76, 170, 129);
+	--secondary-color--90: rgb(53, 160, 114);
+	--secondary-color: rgb(31, 149, 98);
+	--tertiary-color--10: rgb(230, 245, 249);
+	--tertiary-color--20: rgb(204, 235, 243);
+	--tertiary-color--30: rgb(179, 225, 237);
+	--tertiary-color--40: rgb(153, 215, 231);
+	--tertiary-color--50: rgb(128, 205, 225);
+	--tertiary-color--60: rgb(102, 195, 218);
+	--tertiary-color--70: rgb(77, 185, 212);
+	--tertiary-color--80: rgb(51, 175, 206);
+	--tertiary-color--90: rgb(25, 165, 200);
+	--tertiary-color: rgb(0, 155, 194);
+
+	/* SPECIFIC COLORS */
+	--primary-background-color: rgb(242, 246, 247);
+	--font-color: rgb(0, 0, 0);
+	--link-color: rgb(0, 82, 96);
+	--link-color-hover: rgb(0, 0, 0);
+}
+
+/* HTML BODY */
+html, body {
+	font-family: 'Nunito Sans', Lato, 'Trebuchet MS', sans-serif;
+	color: var(--font-color);
+	background-color: var(--primary-background-color);
+	margin: 0px;
+	padding: 0px;
+	min-height: 100vh;
+}
+
+:root {
+	/* COLOR VARIANTS */
+	--primary-color--10: rgb(230, 238, 239);
+	--primary-color--20: rgb(204, 220, 223);
+	--primary-color--30: rgb(179, 203, 207);
+	--primary-color--40: rgb(153, 186, 191);
+	--primary-color--50: rgb(128, 169, 176);
+	--primary-color--60: rgb(102, 151, 160);
+	--primary-color--70: rgb(77, 134, 144);
+	--primary-color--80: rgb(51, 117, 128);
+	--primary-color--90: rgb(25, 99, 112);
+	--primary-color: rgb(0, 82, 96);
+	--secondary-color--10: rgb(233, 244, 239);
+	--secondary-color--20: rgb(210, 234, 224);
+	--secondary-color--30: rgb(188, 223, 208);
+	--secondary-color--40: rgb(165, 213, 192);
+	--secondary-color--50: rgb(143, 202, 177);
+	--secondary-color--60: rgb(121, 191, 161);
+	--secondary-color--70: rgb(98, 181, 145);
+	--secondary-color--80: rgb(76, 170, 129);
+	--secondary-color--90: rgb(53, 160, 114);
+	--secondary-color: rgb(31, 149, 98);
+	--tertiary-color--10: rgb(230, 245, 249);
+	--tertiary-color--20: rgb(204, 235, 243);
+	--tertiary-color--30: rgb(179, 225, 237);
+	--tertiary-color--40: rgb(153, 215, 231);
+	--tertiary-color--50: rgb(128, 205, 225);
+	--tertiary-color--60: rgb(102, 195, 218);
+	--tertiary-color--70: rgb(77, 185, 212);
+	--tertiary-color--80: rgb(51, 175, 206);
+	--tertiary-color--90: rgb(25, 165, 200);
+	--tertiary-color: rgb(0, 155, 194);
+
+	/* SPECIFIC COLORS */
+	--primary-background-color: rgb(242, 246, 247);
+	--font-color: rgb(0, 0, 0);
+	--link-color: rgb(0, 82, 96);
+	--link-color-hover: rgb(0, 0, 0);
+}
+
+/* HTML BODY */
+html, body {
+	font-family: 'Nunito Sans', Lato, 'Trebuchet MS', sans-serif;
+	color: var(--font-color);
+	background-color: var(--primary-background-color);
+	margin: 0px;
+	padding: 0px;
+	min-height: 100vh;
+}
+
+:root {
+	/* COLOR VARIANTS */
+	--primary-color--10: rgb(230, 238, 239);
+	--primary-color--20: rgb(204, 220, 223);
+	--primary-color--30: rgb(179, 203, 207);
+	--primary-color--40: rgb(153, 186, 191);
+	--primary-color--50: rgb(128, 169, 176);
+	--primary-color--60: rgb(102, 151, 160);
+	--primary-color--70: rgb(77, 134, 144);
+	--primary-color--80: rgb(51, 117, 128);
+	--primary-color--90: rgb(25, 99, 112);
+	--primary-color: rgb(0, 82, 96);
+	--secondary-color--10: rgb(233, 244, 239);
+	--secondary-color--20: rgb(210, 234, 224);
+	--secondary-color--30: rgb(188, 223, 208);
+	--secondary-color--40: rgb(165, 213, 192);
+	--secondary-color--50: rgb(143, 202, 177);
+	--secondary-color--60: rgb(121, 191, 161);
+	--secondary-color--70: rgb(98, 181, 145);
+	--secondary-color--80: rgb(76, 170, 129);
+	--secondary-color--90: rgb(53, 160, 114);
+	--secondary-color: rgb(31, 149, 98);
+	--tertiary-color--10: rgb(230, 245, 249);
+	--tertiary-color--20: rgb(204, 235, 243);
+	--tertiary-color--30: rgb(179, 225, 237);
+	--tertiary-color--40: rgb(153, 215, 231);
+	--tertiary-color--50: rgb(128, 205, 225);
+	--tertiary-color--60: rgb(102, 195, 218);
+	--tertiary-color--70: rgb(77, 185, 212);
+	--tertiary-color--80: rgb(51, 175, 206);
+	--tertiary-color--90: rgb(25, 165, 200);
+	--tertiary-color: rgb(0, 155, 194);
+
+	/* SPECIFIC COLORS */
+	--primary-background-color: rgb(242, 246, 247);
+	--font-color: rgb(0, 0, 0);
+	--link-color: rgb(0, 82, 96);
+	--link-color-hover: rgb(0, 0, 0);
+}
+
+/* HTML BODY */
+html, body {
+	font-family: 'Nunito Sans', Lato, 'Trebuchet MS', sans-serif;
+	color: var(--font-color);
+	background-color: var(--primary-background-color);
+	margin: 0px;
+	padding: 0px;
+	min-height: 100vh;
+}
+
+/* END WILL BE REPLACED BY SCRIPT */
+
+/* MANUALLY CRAFTED CSS */
+/* Here you edit the css to update styling of elements / components. This part will be merged into the resulting css with the autogenerated css above */
+
+a {
+  color: var(--primary-color)
+}
+
+b {
+  color: red;
+}
+
+/* Dette skal dukke opp i resultate */
