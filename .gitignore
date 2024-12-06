@@ -131,3 +131,6 @@ dist
 
 # build output
 /build
+
+# Mac
+.DS_Store
