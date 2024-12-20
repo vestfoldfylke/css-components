@@ -12,6 +12,7 @@
   },
   "scripts": {
     "test": "node --test",
+    "refresh": "node ./scripts/refresh-auto-files.js",
     "dev": "vite serve web",
     "dev --colors": "vite serve colors-web"
   },
